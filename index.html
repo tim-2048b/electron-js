@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello World!</title>
+
+  </head>
+  <body>
+    <h1>💖 Hello World!</h1>
+    <p>Welcome to your Electron application.</p>
+
+    <section id="dropZone" class="drop-zone">
+      <div class="drop-content">
+        <svg class="drop-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 2v20M2 12h20"></path>
+          <path d="M7 7l5-5 5 5M7 17l5 5 5-5"></path>
+        </svg>
+        <h2>Drag & Drop Files Here</h2>
+        <p>Drop text files to record their paths</p>
+      </div>
+    </section>
+
+    <section id="recordedFiles" class="recorded-files">
+      <h2>Recorded Files</h2>
+      <ul id="filesList" class="files-list"></ul>
+    </section>
+
+    <script type="module" src="/src/renderer.ts"></script>
+  </body>
+</html>
+
